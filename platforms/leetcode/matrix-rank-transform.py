@@ -8,8 +8,8 @@ class Solution:
         r, c = len(matrix), len(matrix[0])
         rank = [0] * (r + c)
         d = collections.defaultdict(list)
-        for i in xrange(r):
-            for j in xrange(c):
+        for i in range(r):
+            for j in range(c):
                 d[matrix[i][j]].append([i, j])
 
         def find(k):
